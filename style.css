@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {   
+    background-color: rgb(185, 75, 75);
+    height: 70px; 
+    padding: 0 15px;  
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container, .nav-spacer{
+    display:flex;
+    align-items: center; 
+    gap:10px;
+    width: 200px; 
+    flex-shrink: 0; 
+}
+.logo-image{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-left: 10px; 
+}
+.logo-link {
+    display: flex;       /* За да стоят снимката и текстът един до друг */
+    align-items: center;
+    text-decoration: none; /* Маха подчертаването */
+    color: inherit;       /* Взима белия цвят от родителя */
+}
+.nav-list{
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    gap : 20px;
+}
+.nav-link{
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+    transition:all 0.3s ease;
+}
+.nav-link:hover{
+    border-bottom: 2px solid orange;
+    color:orange;
+}
